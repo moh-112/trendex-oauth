@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="refresh" content="0; URL='https://open.tiktokapis.com/v2/platform/oauth/connect?client_key=TRENDX_CLIENT_KEY&response_type=code&scope=user.info.basic,video.list,video.upload,pixel.create,pixel.share&redirect_uri=https://developers.tiktok.com/auth/redirect/&state=trendex'">
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    Redirecting to TikTok for authorization...
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Trendex | TikTok OAuth Redirect</title>
+
+  <!--
+    ----------------------------------------
+      🔴 أهمّ نقطتين:
+      1) بدّل YOUR_CLIENT_KEY_HERE بمفتاحك الحقيقي.
+      2) تأكّد أن redirect_uri نفسها مُسجَّلة داخل إعدادات تطبيق TikTok.
+    ----------------------------------------
+  -->
+  <meta http-equiv="refresh"
+        content="0;
+        url=https://open.tiktokapis.com/v2/platform/oauth/connect
+        ?client_key=YOUR_CLIENT_KEY_HERE
+        &response_type=code
+        &scope=user.info.basic,video.list,video.upload
+        &redirect_uri=https%3A%2F%2Fmoh-112.github.io%2Ftrendex-oauth%2Foauth%2Ftiktok%2F
+        &state=trendex_state">
+  <style>
+    body{font-family: sans-serif; display:flex; height:100vh; align-items:center; justify-content:center;}
+    a{color:#007acc; text-decoration:none; font-weight:600;}
+  </style>
+</head>
+<body>
+  Redirecting to TikTok for authentication…<br />
+  <small>If you aren’t redirected automatically,
+    <a href="https://open.tiktokapis.com/v2/platform/oauth/connect?client_key=YOUR_CLIENT_KEY_HERE&response_type=code&scope=user.info.basic,video.list,video.upload&redirect_uri=https://moh-112.github.io/trendex-oauth/oauth/tiktok/&state=trendex_state">
+      click here
+    </a>.
+  </small>
+</body>
 </html>
