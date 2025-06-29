@@ -1,34 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="refresh"
-          content="0; url=https://open.tiktokapis.com/v2/platform/oauth/connect?client_key=awmt1rlnfv8y59vi&response_type=code&scope=user.info.basic,video.list,video.upload&redirect_uri=https%3A%2F%2Fmoh-112.github.io%2Ftrendex-oauth%2Foauth%2Ftiktok%2F&state=trendex_auth">
-    <title>Redirecting...</title>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>ربط حساب TikTok | Trendex</title>
     <style>
-      body {
-        font-family: sans-serif;
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-        color: #007acc;
-        text-decoration: none;
-        font-weight: 600;
-        text-align: center;
-        padding: 20px;
-      }
-      a {
-        color: #007acc;
-        text-decoration: underline;
-      }
+        body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; font-family: sans-serif; background: #000; color: #fff; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff0; margin-bottom: 10px; }
+        h1 { margin: 10px 0; font-size: 20px; }
+        button { padding: 15px 25px; font-size: 18px; color: #fff; background: #ff0050; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #e60045; }
+        p { margin-top: 15px; font-size: 14px; color: #ccc; }
     </style>
-  </head>
-  <body>
-    Redirecting to TikTok for authentication...<br />
-    <small>If you aren’t redirected automatically,<br />
-      <a href="https://open.tiktokapis.com/v2/platform/oauth/connect?client_key=awmt1rlnfv8y59vi&response_type=code&scope=user.info.basic,video.list,video.upload&redirect_uri=https%3A%2F%2Fmoh-112.github.io%2Ftrendex-oauth%2Foauth%2Ftiktok%2F&state=trendex_auth">
-        click here
-      </a>.
-    </small>
-  </body>
+</head>
+<body>
+    <div class="logo">Trendex AI إدارة محتوى TikTok</div>
+    <h1>لربط حساب TikTok الرسمي</h1>
+    <button onclick="location.href='https://open.tiktokapis.com/v2/platform/oauth/connect?client_key=awmt1rlnfv8y59vi&response_type=code&scope=user.info.basic,video.list,video.upload&redirect_uri=https%3A%2F%2Fmoh-112.github.io%2Ftrendex-oauth%2Foauth%2Ftiktok%2Fcallback.html'">
+        🔗 تسجيل الدخول بـ TikTok
+    </button>
+    <p>اضغط فوق وسوف يتم إعادة توجيهك لتسجيل الدخول وتفويض الإدارة التلقائية.</p>
+</body>
 </html>
